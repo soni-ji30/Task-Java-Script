@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+
+        <h4>Meal Menu</h4>
+
+
+        <div class="row">
+
+            <div class=" col-4">
+                <label>Lunch Items</label>
+
+
+
+                <select id="myLunch" onclick="lunchitem()" multiple="multiple">  
+<option>--Select Lunch--</option>  
+<option text="Fried Rice" value="40">Fried Rice</option>  
+<option  text="Sanwitch" value="30">Sandwich</option>  
+<option  text="Burger" value="55">Burger</option>  
+<option text="Butter Paneer" value="90">Butter Paneer</option>  
+</select>
+
+            </div>
+
+
+            <div class="col-4">
+                <label>Dinner Items</label>
+
+                <select id="myDinner" onclick="dinneritem()" multiple="multiple">  
+<option>--Select Dinner--</option>  
+<option text="Rice" value="20">Rice</option>  
+<option text="Dal Roti" value="30">Dal Roti</option>  
+<option text="Pizza" value="80">Pizza</option>  
+<option text="Dosa" value="60">Dosa</option>  
+</select>
+
+            </div>
+
+
+            <div class="col-4">
+                <label>Gifted Items</label>
+                <select id="myGift" onclick="giftitem()" multiple="multiple">  
+<option>--Select Gifted dish--</option>  
+<option text="Cold Drink" value="70">Cold Drink</option>  
+<option text="Juice" value="50">Juice</option>
+<option text="Lassi" value="25">Lassi</option>  
+ 
+</select>
+
+            </div>
+            <div>
+                <label>Items Buy</label>
+
+                <input type="text" id="tot" class="col-6">
+            </div>
+
+
+        </div>
+        <button class="btn1" type="button" id="btn">Total Cost</button>
+        <button class="btn2" type="button" onclick="clearitem()">Clear Entry</button>
+    </div>
+    <script src="task.js"></script>
+
+
+</body>
+
+</html>
